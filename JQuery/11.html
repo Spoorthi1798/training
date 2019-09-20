@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        alert("Name: " + $("#test").val());
+alert("Address: " + $("#test1").val());
+alert("Phone no: " + $("#test2").val());
+    });});
+</script></head><body>
+<p>Name: <input type="text" id="test" value="Amit Kumar"></p>
+<p>Address: <input type="text" id="test1" value="Bangalore"></p>
+<p>Phone no: <input type="text" id="test2" value="7766554433"></p>
+<button>Show Value</button>
+</body></html>
