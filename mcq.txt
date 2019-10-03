@@ -1,0 +1,276 @@
+1. Which class is used to map a database row to a java object in spring?
+
+a. ResultSet
+b. RowSetMApper
+c. ResultSetMapper
+d. None of the above
+
+Ans: 
+
+
+2. JdbcTemplate class provided the following 3 type of methods to execute SQL operations on database
+
+a. execute() update() delete()
+b. update() delete() insert()
+c. execute() update() query()
+d. none of the above
+
+Ans: c
+
+
+3. Bean Factory is the implementation of the
+a. Observer Design
+b. Pattern
+c. Factory Design Pattern
+d. Subscriber and Publisher
+e. Chain of responsibility
+
+Ans : c
+
+4. Additional services needed to be injected at different places or point, such points are called has
+
+a. JoinPoint
+b. AdvicePoint
+c. CrossPOint
+d. All of the above
+
+
+5. Which of the following is actual representation of the spring IOC container?
+
+a. ApplicationContext
+b. HttpSession
+c. BeanFactory
+d. WebApplicationContext
+
+Ans : c (confirm)
+
+
+6. Select Defauylt Handler mapping used by Spring MVC
+
+a. ControllerClassNameHandlerMapping
+b. BeanNameUrlHandlerMapping
+c. SimpleUrlHandlerMapping
+d. None of the above.
+
+Anse : b
+
+
+
+7. Which are diifferent points where weaving can be applied?
+
+a. Compile time and Classload time
+b. Compile time,Classload time, load time
+c. Compile time and run time
+d. Compile time, Classload time, Runtime
+
+Ans : d
+
+
+8. In the case of Spring MVC __________ is the front controller
+
+a. FilterDispatcher
+b. ServletDispatcher
+c. Bean
+d. None of the above
+
+Ans : b (confirm)
+
+
+9. How many modules/layers are there in Spring?
+
+a. 5
+b. 6
+c. 7
+d. 8
+
+Ans : 5 (confirm)
+
+
+10. How to auto-inject into a field a bean by its name? Select one or more response.
+
+a. With the name attribute of the @Autowired annotation
+b. By using single @Qualifier annotation
+c. By using both @Autowired annotation and @Qualifer spring annotation
+d. By using the @Autowired annotation and naming the field with the bean name.
+
+
+Ans : c and d
+
+
+11. JDBC template follows ________ design pattern
+
+
+a. factory
+b. Observer
+c. template
+d. None of the above
+
+
+Ans : c (confirm)
+
+
+
+12. Which statement is true about DispatcherServlet?
+
+a. The DispatcherServlet is an expression of the "Front Controller" design pattern.
+b. DispatcherServlet is the actual servlet.
+c. The dispatcherServlet is declared in the web.xml of your webapplication.
+d. The Spring DispatcherServlet has a couple of special beans it uses in order to be able to process requests and render the appropriate view. 
+   These beans can be configured in webapplication context.
+e. All of the above
+
+
+Ans : e (confirm)
+
+
+13. Which class is used to map a database row to a java object in spring?
+
+a. ResultSet
+b. RowSetMapper
+c. ResultSetMapper
+d. None of the above
+
+
+Ans : b (confirm)
+
+
+
+14. What are different autowire types?
+
+
+a. ByName,byType, destructor and autodetect
+b. byName, byMethod, constructor and autodetect
+c. byName,byType,constructor and autocorrect
+d. byName, byType, constructor and autodetect
+
+Ans : d (confirm)
+
+
+15. What is/are typically cases(s) where you usually need to manually instantiate anApplicationContext?
+
+
+a. In a webapplication 
+b. In a integration test running with the SpringJunit4ClassRunner
+c. In a standalone application started with a main method
+d. None of the above.
+
+
+Ans : c
+
+
+16. Given the following Spring confirguration fil, what is the correct answer?
+	<bean class = "com.spring.service.MyServiceImpl">
+	<property name= "repository" ref="jpeDao"/>
+	</bean>
+	<bean class="com.spring.repository.JpaDao"/>
+
+
+a. The first declared bean MyServiceImpl is missing and Id must be named myService.
+b. The second declared bean JpaDao is missing an Id must be named jpaDao.
+c. Both A and B
+d. No error.
+
+
+Ans : B
+
+
+17. What are the responsibilities of xmlBeanfactory included?
+
+
+a. The implementation allows you to express the object that compose your application
+b. Resolve interdependencies between such objects in terms of xml.
+c. The xmlBeanFactory takes the xmlconfiguration metadata and uses it to create a fully configured system or a...
+d. None of the above
+
+
+Ans: c 
+
+
+18. Spring's transaction support is not tied to _________
+
+a. Database
+b. J2EE
+c. Java
+d. None of the above
+
+
+Ans : J2EE
+
+
+
+19. A ________ defines what advices are required at what joint points?
+
+a. JoinPoint
+b. PointCut
+c. CrossCut
+d. None of the above
+
+
+Ans : a
+
+
+
+20. Additional services needed to be injected at different places or points, Such points are called as
+
+
+a. Joinpoint
+b. AdvicePoint
+c. CrossPoint
+d. All of the above
+
+
+Ans : b
+
+
+21. _________ is the implementation of Aspects.
+
+
+a. Crosscutting
+b. Join
+c. Advice
+d. All of the above
+
+And : c
+
+
+22. Beans defined in Spring framework are by default
+
+a. Abstract
+b. Singleton
+c. Final
+d. Initialised
+
+Ans : b
+
+
+23. Given the following configuration class, what are the correct affirmations? Select 1 or more answers.
+	public class AppliactionConfig {
+	private DataSource datasource;
+	@Autowired
+	public ApplicationConfig(DAtaSource datasource) {
+	this.datasource = datasource;
+	}
+	@Bean(name="clientRepository() {
+	ClientRepository jpaClientRepository() {
+	return new JpaClientRepository();
+	}
+	}
+
+
+a. @Configuration annotation is missing
+b. Default or no arg-constructor is missing.
+c. @Bean name is ambiguous.
+d. @Bean scope is prototype
+
+Ans : a and b. (confirm)
+
+
+24. What is Default wiring used by Spring Container
+
+a. byType 
+b. Constructor
+c. byName
+d. Autodetect
+
+Ans : d
+
